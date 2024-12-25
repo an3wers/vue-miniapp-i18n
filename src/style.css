@@ -1,0 +1,179 @@
+/* start css reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+/* end css reset */
+
+:root {
+  color-scheme: light dark;
+
+  --nav-bg: #373737;
+  --text-color: rgba(255, 255, 255, 0.9);
+  --bg-color: #242424;
+  --btn-bg: #373737;
+  --btn-color: rgba(255, 255, 255, 0.9);
+
+  --border-color: rgba(255, 255, 255, 0.4);
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* TODO: Programm change color scheme */
+/* body.dark {
+  --nav-bg: #373737;
+  --text-color: rgba(255, 255, 255, 0.9);
+  --bg-color: #242424;
+  --btn-bg: #373737;
+  --btn-color: rgba(255, 255, 255, 0.9);
+
+  color-scheme: dark;
+}
+
+body.light {
+  --nav-bg: #f5f5f5;
+  --text-color: #213547;
+  --bg-color: #ffffff;
+  --btn-bg: #242424;
+  --btn-color: rgba(255, 255, 255, 0.87);
+
+  color-scheme: light;
+} */
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  margin: 0;
+  min-width: 320px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:active {
+  color: var(--text-color);
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  color: var(--btn-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: var(--btn-bg);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+}
+
+.form-group label {
+  font-weight: 500;
+}
+
+.form-group input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  background-color: transparent;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --nav-bg: #f5f5f5;
+    --text-color: #213547;
+    --bg-color: #ffffff;
+    --btn-bg: #242424;
+    --btn-color: rgba(255, 255, 255, 0.87);
+    --border-color: rgba(0, 0, 0, 0.5);
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "base": {
+    "title": "Register",
+    "subtitle": "Create your account"
+  },
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "confirm-password": "Confirm Password",
+    "submit": "Register",
+    "errors": {
+      "name": "Name is required",
+      "email": "Email is required",
+      "password": "Password is required",
+      "confirm-password": "Confirm Password is required",
+      "password-match": "Passwords do not match",
+      "account-exists": "Account already exists"
+    }
+  }
+}
